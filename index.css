@@ -1,0 +1,423 @@
+/* Core Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    background: url("images/sitebg.jpg") no-repeat center fixed;
+    background-size: cover;
+    color: white;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+img {
+    display: block;    
+    width: 100%;
+    height: auto;    
+}
+
+h1, h2, h3, h4 {
+    margin: 0;    
+}
+
+a {
+    color: white;
+}
+ 
+a:hover {
+    color: orange;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.btn { 
+    display: inline-block;
+    background: rgb(131, 247, 247);
+    color: rgb(41, 2, 36);
+    text-decoration: none;
+    padding: .5em 1em;
+    border: 1px solid black;
+    margin: .5em 0;
+} 
+
+.btn:hover {
+    background: orange;
+    color: black;
+} 
+
+.section-heading {
+    text-align: center;
+    background-color: lavender;
+    border-radius: 32%;
+    padding: 2px;
+    opacity: .9;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.content-title h2 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 6.5rem;
+    color: rgb(131, 247, 247);
+    opacity: .6;
+}
+
+h2 {
+    font-family: 'Rammetto One', cursive;
+    font-size: 30px;
+    color: rgb(131, 247, 247);
+    text-shadow: 2px 2px 2px rgb(59, 2, 79);
+    margin: 0; 
+    padding-top: .5em;
+    opacity: .8;
+}
+
+h3 {
+    font-size: 20px;
+    color: orange;
+    margin: 0;
+    padding-bottom:.5em;
+} 
+
+/* Header Showcase */
+
+#showcase {
+    min-height: 450px;
+    text-align: center;
+}
+
+#showcase #bg-image {
+    text-align: center;
+    /* background: url(/images/Cyra-Bag-O-Tricks-Logo-Recovered.gif); */
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    opacity: .9;
+
+}
+
+#showcase .content-wrap,
+#section-a .content-wrap {
+    padding: 0 1em;
+}
+
+/* Nav Bar */
+
+.top-nav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    top: -100vh;
+    z-index: 50;
+    background-color: rgb(144, 247, 247);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: all 450ms cubic-bezier(1, 0, 0, 1)
+}
+
+.nav-list {
+    list-style-type: none;
+    width: 100%;
+    /* display: flex; */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-list li {    
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: .5em 1em;
+}
+
+.nav-list li a {
+    color: rgb(102, 31, 138);
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+   background: linear-gradient(to top, rgb(131, 247, 247), rgb(236, 161, 236));
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+}
+
+.top-nav.open {
+    top: 0;
+    border-radius: initial;
+}
+
+/* Menu Toggler */
+
+.menu-toggler {
+    position: absolute;
+    top: 1.3rem;
+    right: 1.3rem;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 1500;
+    transition: transform 650ms ease-out;
+}
+
+.menu-toggler-open {
+    transform: rotate(-45deg)
+} 
+
+.bar {
+    background: linear-gradient(to right, rgb(131, 247, 247), rgb(236, 161, 236));
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+}
+
+.bar.half {
+    width: 50%;
+}
+.bar-start {
+    transform-origin: right;
+    transition: transform 650ms (cubic-bezier(0.54, 0.1, 0.57, 0.57));
+}
+
+.open.bar.start {
+    transform: rotate(-450deg) translate(.8rem);
+}
+
+.bar.end {
+    align-self: flex-end;
+    transform-origin: left;
+    transition: transform 650ms (cubic-bezier(0.54, .0.1, 0.57, 0.57));
+}
+
+.open.bar.end {
+    transform: rotate(-450deg) translate(-8rem);
+}
+
+/* Section A--About Me */
+#section-a {
+    padding-bottom: 2em;
+
+}
+
+#section-a img {
+    margin-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+/* Section B Portfolio */
+
+#section-b {
+    padding: 2em 1em 1em;
+}
+
+#section-b ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#section-b li {
+    margin-bottom: 1em;  
+    color:white;  
+}
+
+.card-content {
+    padding: 1.5em;
+}
+
+#section-b img {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#section-b h2 {
+    font-size: 1.3em;
+}
+
+/* Section C Skills  */
+
+#section-c {
+    padding: 2em;
+}
+
+#section-c h2 {
+    font-size: 1em;
+}
+
+/* Section D Job Info */
+
+#section-d {
+    padding: 2em;
+}
+
+#section-d ul {
+    list-style-type: none;
+}
+
+/* Section E Contact */
+
+#section-e {
+    padding: 2em;
+    margin-top: 10px;;
+
+}
+
+#section-e a {
+    font-size: 2em;
+}
+/* Footer */
+
+#main-footer {
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+
+
+@media(min-width: 700px) {    
+
+    .nav-list {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .logo-image {
+        padding-left: 19%;
+        padding-right: 19%;
+    }
+
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    p {
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .section-heading {
+        text-align: center;
+        background-color: lavender;
+        border-radius: 32%;
+        padding-left: 12%;
+        padding-right: 12%;
+        opacity: .9;
+        margin: .5rem  17%;
+        margin-bottom: 20px;
+        
+    }
+
+    h2 {
+        font-family: 'Rammetto One', cursive;
+        font-size: 40px;
+        color: rgb(131, 247, 247);
+        text-shadow: 2px 2px 2px rgb(59, 2, 79);
+        margin: 0; 
+        padding-top: .5em;
+        opacity: .8;
+    }
+    
+    h3 {
+        font-size: 30px;
+        color: orange;
+        text-shadow: 2px 2px 2px black;
+        margin: 0;
+        padding-bottom:.5em;
+    } 
+
+    #section-a img {
+        margin-top: 20px;
+        padding-left: 35%;
+        padding-right: 35%;
+        opacity: .8;
+    }
+
+    /* .content-wrap, 
+    #section-b ul {
+        grid-column: 2/6;
+    } */
+
+    #section-b ul {
+        text-align: initial;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    #section-b li {
+        margin-bottom: 1em;  
+        color:white; 
+        width: 27%; 
+    }
+
+    #section-b p {
+        margin: 1px;
+        padding: 2px;
+    }
+
+    .webDev-container,
+    .graphic-container {
+        display: flex;
+        justify-content: space-between;
+
+        
+    }
+
+    .card {
+        width: 27%;
+        
+    }
+
+    
+    #section-b h2 {
+        font-size: 2em;
+    }
+
+    #section-c h2 {
+        font-size: 2em;
+    }
+
+    #section-e a {
+        font-size: 3em;
+        background: white;
+        border-radius: 5%;
+        padding: 5px;
+        margin: 3 px;
+    }
+}
