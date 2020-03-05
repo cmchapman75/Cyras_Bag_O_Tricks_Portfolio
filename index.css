@@ -68,14 +68,14 @@ p {
 .content-title h2 {
     font-family: 'Rammetto One', cursive;
     font-size: 6.5rem;
-    color: rgb(131, 247, 247);
+    color: rgb(20, 97, 97);
     opacity: .6;
 }
 
 h2 {
     font-family: 'Rammetto One', cursive;
     font-size: 30px;
-    color: rgb(131, 247, 247);
+    color: rgb(144, 247, 247);
     text-shadow: 2px 2px 2px rgb(59, 2, 79);
     margin: 0; 
     padding-top: .5em;
@@ -249,7 +249,7 @@ h3 {
     padding: 1.5em;
 }
 
-#section-b img {
+.port-image {
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -327,9 +327,9 @@ h3 {
         padding-right: 12%;
     }
 
-    img {
+    /* img {
         width: 100%;
-    }
+    } */
 
     .section-heading {
         text-align: center;
@@ -343,7 +343,7 @@ h3 {
         
     }
 
-    h2 {
+    .section-heading h2 {
         font-family: 'Rammetto One', cursive;
         font-size: 40px;
         color: rgb(131, 247, 247);
@@ -373,6 +373,25 @@ h3 {
         grid-column: 2/6;
     } */
 
+
+    /* Section B--Portfolio--Desktop */
+
+    #section-b {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .port-image {
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: auto;    
+        
+    }
+
     #section-b ul {
         text-align: initial;
         list-style-type: none;
@@ -385,29 +404,45 @@ h3 {
         color:white; 
         width: 27%; 
     }
+    
+    #section-b h2 {
+        font-size: 2em;
+    }
+    #section-b h3 {
+        text-align: center; 
+    }
+
+    .card-title h2 {
+        text-align: center;
+        font-size: .8em;
+    }
 
     #section-b p {
-        margin: 1px;
-        padding: 2px;
+        margin: 0;
+        padding: 0;
     }
 
     .webDev-container,
     .graphic-container {
+        text-align: center;
         display: flex;
         justify-content: space-between;
 
         
     }
 
+    .card-content {
+        padding: 1%;
+    }
     .card {
         width: 27%;
         
     }
 
     
-    #section-b h2 {
+    /* #section-b h2 {
         font-size: 2em;
-    }
+    } */
 
     #section-c h2 {
         font-size: 2em;
