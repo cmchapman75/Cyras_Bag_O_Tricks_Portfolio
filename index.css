@@ -298,7 +298,9 @@ h3 {
 }
 
 
-@media(min-width: 700px) {    
+@media(min-width: 700px) {  
+
+    /* Nav Bar Desktop Formatting   */
 
     .nav-list {
         list-style-type: none;
@@ -313,6 +315,7 @@ h3 {
         align-items: center;
     }
 
+    /* Header Desktop styling */
     .logo-image {
         padding-left: 19%;
         padding-right: 19%;
@@ -327,10 +330,7 @@ h3 {
         padding-right: 12%;
     }
 
-    /* img {
-        width: 100%;
-    } */
-
+    /* Section Headings Desktop */
     .section-heading {
         text-align: center;
         background-color: lavender;
@@ -339,8 +339,7 @@ h3 {
         padding-right: 12%;
         opacity: .9;
         margin: .5rem  17%;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px;        
     }
 
     .section-heading h2 {
@@ -361,6 +360,8 @@ h3 {
         padding-bottom:.5em;
     } 
 
+    /* Section-A Desktop */
+
     #section-a img {
         margin-top: 20px;
         padding-left: 35%;
@@ -368,12 +369,7 @@ h3 {
         opacity: .8;
     }
 
-    /* .content-wrap, 
-    #section-b ul {
-        grid-column: 2/6;
-    } */
-
-
+    
     /* Section B--Portfolio--Desktop */
 
     #section-b {
@@ -427,10 +423,13 @@ h3 {
         text-align: center;
         display: flex;
         justify-content: space-between;
-
-        
+              
     }
 
+
+    .graphic-container {
+        align-items: flex-end;
+    }
     .card-content {
         padding: 1%;
     }
@@ -439,14 +438,13 @@ h3 {
         
     }
 
-    
-    /* #section-b h2 {
-        font-size: 2em;
-    } */
+    /* Section C Desktop */
 
     #section-c h2 {
         font-size: 2em;
     }
+
+    /* Section E Desktop */
 
     #section-e a {
         font-size: 3em;
