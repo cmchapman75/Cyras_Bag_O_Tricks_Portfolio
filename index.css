@@ -79,7 +79,7 @@ p {
 
 h2 {
     font-family: 'Rammetto One', cursive;
-    font-size: 30px;
+    font-size: 140%;
     color: rgb(144, 247, 247);
     text-shadow: 2px 2px 2px rgb(59, 2, 79);
     margin: 0; 
@@ -413,7 +413,7 @@ h3 {
 
     .card-title h2 {
         text-align: center;
-        font-size: .8em;
+        font-size: 20px;
     }
 
     #section-b p {
@@ -443,9 +443,7 @@ h3 {
 
     /* Section C Desktop */
 
-    #section-c h2 {
-        font-size: 2em;
-    }
+    
 
     /* Section E Desktop */
 
@@ -456,4 +454,8 @@ h3 {
         padding: 5px;
         margin: 3 px;
     }
+}
+
+@media(min-width: 700px) {
+
 }
